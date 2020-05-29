@@ -204,9 +204,9 @@ def getMinDistance (img, dWinNum, inputX, inputY, score):
 ############################################################# Main ########################################################
 init()
 #colorDwin(letter, dWinList) #used to color in the dWin black for debugging
-broker = "192.168.0.65"
-client = mqtt.Client(transport = "websockets")
-client.connect(broker)
+#broker = "192.168.0.65"
+#client = mqtt.Client(transport = "websockets")
+#client.connect(broker)
 while True:
     cv2.imshow("Learn to Write!", letter)
     key = cv2.waitKey(1) & 0xFF
@@ -396,4 +396,4 @@ cv2.destroyAllWindows()
 #                     return 
 #             else:
 #                 y -= 1
-#         x += 1   
+#         x += 1    
